@@ -1,0 +1,263 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,100,500,700,600,800,900);
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    margin: 0 auto;
+    width: 1120px;
+}
+.top {
+    min-height: 250px;
+    background: #202739 url(http://beloweb.ru/wp-content/uploads/2016/05/654654654-123.jpg) center center no-repeat;
+    border-radius: 50px 50px 0 0;
+    border-bottom: solid 3px rgb(69, 18, 189);
+  }
+
+  body {
+    background: #d4d4d4;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #666;
+  }
+  .navigation {
+    background: rgb(58,58,58);
+    border-top: solid 3px rgb(211, 17, 17);
+    
+  }
+  .navigation ul{
+      list-style: none;
+      margin: 0;
+      padding:0
+  }
+  .navigation  > ul{
+      align-items: stretch;
+      display: flex;
+      justify-content: flex-start;
+  }
+  .navigation  > ul ul{
+      display: none;
+      background: #222;
+      position: absolute;
+      border: solid 3px #fff;
+        border-top: 0;
+        border-radius: 0 0 8px 8px;
+        box-shadow:  0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+  }
+  .navigation  > ul ul a{
+      display: inline-block;
+      padding: 5px 7px;
+  }
+  .navigation  > ul ul li:hover{
+    background: rgb(58,58,58);
+
+}
+
+
+  .navigation  a{
+      color: #FFF;
+      text-decoration: none;
+  }
+  .navigation  > ul >li >a{
+      display: inline-block;
+      padding: 5px 10px;
+  }
+  .navigation  > ul >li:hover{
+    background: #222;
+  }
+  .navigation  > ul >li:hover ul{
+      display: block;   
+  }
+  
+  
+
+
+.game .poster{
+    margin-bottom: 30px;
+}
+.game .poster img{
+    height: auto;
+    width: 100%;
+}
+
+
+#partner ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    padding: 0;
+    justify-content: center;
+}
+#partner ul li{
+    box-sizing: border-box;
+    margin: 0 10px;
+    width: calc(25% - 20px);
+}
+
+#partner .image{
+    height: 125px;
+    width: 100%;
+   overflow: hidden;
+}
+
+
+#news{
+    background: #FFF;
+    align-items: stretch;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+#news .categories{
+    border-left: 2px solid #EFEFEF;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-left: 20px;
+    padding-left: 20px;
+    min-width: 200px;
+}
+#news .categories ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#news .categories ul a{
+    color: #333;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+#news .categories ul a:hover{
+    background: #EEE;
+}
+.block-news-item{
+    display: flex;
+    margin-bottom: 20px;
+}
+.block-news-item .image{
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 20px;
+    max-width: 150px;
+}
+.block-news-item .image img{
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: bottom;
+}
+.block-news-item .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.block-news-item .description .title{
+    font-size: 16px;
+    font-weight: bold;
+}
+.block-news-item .description .text{
+    font-size: 14px;
+    margin: 20px 0;
+}
+.block-news-item .description .bottom{
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    margin-top: auto;
+}
+.block-news-item .description .bottom a{
+    border-bottom: 1px dashed red;
+    text-decoration: none;
+    color: red;
+    padding-bottom: 1px;
+}
+
+.block-pagination ul {
+    
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    
+    
+    
+}
+
+.block-pagination ul li {
+   
+}
+
+
+.block-pagination ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 0 10px;
+
+
+}
+
+.block-pagination ul li.active,
+.block-pagination ul li:hover{
+    background: grey;
+
+
+
+}
+   /*инфа на странице и хлеб*/
+.block-breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.block-breadcrumbs ul li a{
+    color: black;
+}
+.block-breadcrumbs ul li{
+    margin: 0 10px;   
+}
+.block-breadcrumbs ul li::before{
+    content: "/";
+    margin-right: 10px;
+}
+.block-breadcrumbs ul li:first-child::before{
+    margin-right: 0;
+    content: "";
+}
+
+
+.block-breadcrumbs ul li:first-child{
+    margin-left: 0;   
+}
+.information img{
+    height: 100%;
+    width: 100%;
+
+
+}
+
+#section-open-news{
+    background: #FFF;
+    padding: 20px;
+}
+
+/* поделиться */
+.block-share{
+    display: flex;
+   justify-content: center;
+    
+
+
+}
+
+/* магазин */
+.mony img{
+    width: 300px;
+    height: 200px;
+    padding: 10px 30px;
+
+}
