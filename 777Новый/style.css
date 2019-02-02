@@ -1,42 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,100,500,700,600,800,900);
 html, body{
-    min-height: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
-}
-body{
-   background: #00182E url('https://i.pinimg.com/originals/cd/42/d6/cd42d68971b7a6e5f9e785a3e7a56eeb.gif')
-   center top no-repeat ;
-   background-size: 100% auto;
-   background-attachment: fixed;
 }
 .container{
     margin: 0 auto;
     width: 1120px;
-    background:
-}
-.logotype{
-    background: #202739;
-    border-radius: 50px 50px 0 0;
-    border-bottom: solid 3px rgb(69, 18, 189);
-    margin-top: 20px;
-    overflow: hidden;
-}
-.logotype img{
-    height: auto;
-    max-height: 100%;
-    max-width: 100%;
-    vertical-align: bottom;
-    width: auto;
 }
 .top {
-    /* min-height: 250px;
-    background: #202739 url(https://psv4.userapi.com/c848136/u182183914/docs/d1/c54d9e034ab3/logo_na_etot_raz_nadeys_bez_oshibok.png?extra=9e0Z_-7uvSUeapr1TT20L22fHcBH4Bfk9qfXcRQn3UyVnr-FopQ1P0ezYIb0qvASyD7ogTMpk9VVUt9VSvAjrrTcvRb8Qb-03N9aKsRU78fcKJMH9fpBqVHWgwIKh2y0hKkVCjsMIrJv4zAgMbUSzg) center center no-repeat;
+    min-height: 250px;
+    background: #202739 url(http://beloweb.ru/wp-content/uploads/2016/05/654654654-123.jpg) center center no-repeat;
     border-radius: 50px 50px 0 0;
-    border-bottom: solid 3px rgb(69, 18, 189); */
+    border-bottom: solid 3px rgb(69, 18, 189);
   }
-  
+
   body {
+    background: #d4d4d4;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -275,96 +255,9 @@ body{
 }
 
 /* магазин */
+.mony img{
+    width: 300px;
+    height: 200px;
+    padding: 10px 30px;
 
- .mony img{
-    height: auto;
-    max-height: 100%;
-    max-width: 100%;
-    vertical-align: bottom;
-    width: auto;
-}
-
-.mony {
-    box-sizing: border-box;
-    width: calc(25% - 20px);
-    background: white;
-    word-break: break-all;
-    padding: 10px;
-    border: 3px solid #778899;
-    margin: 0 10px 10px;
-    /* height: auto;
-    padding: 10px 10px;
-    margin: 10px;
-    background: white;
-    
-    outline: 3px solid #778899;
-    display: inline-block; */
-}
-.links{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 -5px;
-}
-.links a{
-    background: grey;
-    box-sizing: border-box;
-    color: white;
-    text-decoration: none;
-    margin-left: 5px;
-    margin-right: 5px;
-    padding: 5px 10px;
-    text-align: center;
-    font-size: 12px;
-}
-.links a.basket{
-    flex-grow: 1;
-}
-
-.line{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px -10px 0;
-}
-
-#news-slider{
-    position: relative;
-    text-align: center;
-}
-#news-slider img{
-    height: auto;
-    max-height: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    vertical-align: bottom;
-    width: auto;
-}
-#news-slider .slick-dots{
-    bottom: 20px;
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    left: 0;
-    right: 0;
-}
-#news-slider .slick-dots li{
-    margin: 0 5px;
-}
-#news-slider .slick-dots li.slick-active button{
-    opacity: 1;
-    outline: none;
-    
-}
-#news-slider .slick-dots button{
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    background: yellow;
-    font-size: 0;
-    line-height: 0;
-    height: 10px;
-    opacity: .2;
-    width: 10px;
 }
