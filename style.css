@@ -258,6 +258,38 @@ html, body{
 .mony img{
     width: 300px;
     height: 200px;
-    padding: 10px 30px;
+    padding:;
+    background: ;
+}
 
+.mony {
+    width: 300px;
+    height: auto;
+    padding: 10px 10px;
+    margin: 10px;
+    background: white;
+    word-break: break-all;
+    outline: 3px solid #778899;
+    display: inline-block;
+}
+
+    .mony .buttom{
+        background: grey;
+        color: white;
+        width: 80px;
+        height: 30px;
+        padding: 10px 0 0 0;
+
+    }
+    .mony .buttom2 {
+        background: grey;
+        color: white;
+        width: 120px;
+        height: 30px;
+        padding: 10px 0 0 0;
+    }
+
+.line{
+    display: inline-block;
+    padding: 10px;
 }
