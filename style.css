@@ -141,7 +141,7 @@ body {
 
 
 #news {
-    background: #FFF;
+    background:transparent;
     align-items: stretch;
     display: flex;
     justify-content: space-between;
@@ -171,12 +171,13 @@ body {
             }
 
                 #news .categories ul a:hover {
-                    background: #EEE;
+                    background: white;
                 }
 
 .block-news-item {
     display: flex;
     margin-bottom: 20px;
+    
 }
 
     .block-news-item .image {
@@ -208,6 +209,10 @@ body {
         .block-news-item .description .text {
             font-size: 14px;
             margin: 20px 0;
+            
+        }
+        .block-news-item .description .text .p{
+         color: purple;   
         }
 
         .block-news-item .description .bottom {
@@ -281,7 +286,7 @@ body {
 }
 
 #section-open-news {
-    background: #FFF;
+    background:transparent;
     padding: 20px;
 }
 
@@ -416,6 +421,52 @@ body {
             .pay h1 {
                 color: #A9A9A9;
             }
+            #news-slider {
+                position: relative;
+                text-align: center;
+            }
+            
+                #news-slider .pay img {
+                    height: auto;
+                    max-height: 100%;
+                    max-width: 100%;
+                    margin: 0 auto;
+                    vertical-align: bottom;
+                    width: auto;
+                }
+            
+                #news-slider .pay {
+                    bottom: 20px;
+                    display: flex;
+                    list-style: none;
+                    justify-content: center;
+                    margin: 0;
+                    padding: 0;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                }
+            
+                    #news-slider .pay li {
+                        margin: 0 5px;
+                    }
+            
+                        #news-slider .pay li.slick-active button {
+                            opacity: 1;
+                            outline: none;
+                        }
+            
+                    #news-slider .pay button {
+                        cursor: pointer;
+                        border: none;
+                        border-radius: 50%;
+                        background: yellow;
+                        font-size: 0;
+                        line-height: 0;
+                        height: 10px;
+                        opacity: .2;
+                        width: 10px;
+                    }
        
   /* стырено*/
 
