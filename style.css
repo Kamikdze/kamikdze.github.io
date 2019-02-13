@@ -466,8 +466,21 @@ body {
                         height: 10px;
                         opacity: .2;
                         width: 10px;
-                    }
-       
-  /* стырено*/
+                        opacity: .1;
+                       }
+                    .pay2 button{
+                           color: red;
+                           height: 50px;
+                           width: 100px;
+                           justify-content: center;
+                           display: flex;
+                       }
+/* cлайдер */
 
-/*конец воровству*/
+                    #store-slider .img {
+                    height: 50%;
+                    width: 50%;
+                    
+                    }
+
+                    
