@@ -483,4 +483,27 @@ body {
                     
                     }
 
+                    .test{
+                        justify-content: center;
+                        display: flex;
+                        font-size: 30px;
+                        padding: 15px;
+                        color: #FF7F50;
+                        
+                    }
+                   
+                   .Zipplain div{
+                    justify-content: center;
+                    display: flex;
+                    padding: 4px;
+                   }
+
+                   .Zipplain button{
+                    height: 40px;
+                    width: 660px;
+                    background:#6A5ACD;
+                    color: #FFD700;
+                    font-size: 200%;
                     
+
+                   }
