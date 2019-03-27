@@ -16,7 +16,7 @@ body {
 .container {
     margin: 0 auto;
     width: 1120px;
-    background:
+    
 }
 
 .logotype {
@@ -35,19 +35,14 @@ body {
         width: auto;
     }
 
-.top {
-    /* min-height: 250px;
-    background: #202739 url(https://psv4.userapi.com/c848136/u182183914/docs/d1/c54d9e034ab3/logo_na_etot_raz_nadeys_bez_oshibok.png?extra=9e0Z_-7uvSUeapr1TT20L22fHcBH4Bfk9qfXcRQn3UyVnr-FopQ1P0ezYIb0qvASyD7ogTMpk9VVUt9VSvAjrrTcvRb8Qb-03N9aKsRU78fcKJMH9fpBqVHWgwIKh2y0hKkVCjsMIrJv4zAgMbUSzg) center center no-repeat;
-    border-radius: 50px 50px 0 0;
-    border-bottom: solid 3px rgb(69, 18, 189); */
-}
+
 
 body {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 26px;
-    color: #666;
+    color: white;
 }
 
 .navigation {
@@ -95,6 +90,7 @@ body {
     .navigation > ul > li > a {
         display: inline-block;
         padding: 5px 10px;
+        
     }
 
     .navigation > ul > li:hover {
@@ -103,6 +99,7 @@ body {
 
         .navigation > ul > li:hover ul {
             display: block;
+            z-index: 1;
         }
 
 
@@ -145,11 +142,11 @@ body {
     align-items: stretch;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding:  20px 0;
 }
 
     #news .categories {
-        border-left: 2px solid #EFEFEF;
+        border-left: 2px solid white;
         flex-grow: 0;
         flex-shrink: 0;
         margin-left: 20px;
@@ -164,14 +161,14 @@ body {
         }
 
             #news .categories ul a {
-                color: #333;
+                color: white;
                 display: block;
                 padding: 10px 20px;
                 text-decoration: none;
             }
 
                 #news .categories ul a:hover {
-                    background: white;
+                    background: #591375;
                 }
 
 .block-news-item {
@@ -223,9 +220,9 @@ body {
         }
 
             .block-news-item .description .bottom a {
-                border-bottom: 1px dashed red;
+                border-bottom: 1px dashed white;
                 text-decoration: none;
-                color: red;
+                color: white;
                 padding-bottom: 1px;
             }
 
@@ -235,12 +232,10 @@ body {
     list-style: none;
 }
 
-    .block-pagination ul li {
-    }
-
+    
 
         .block-pagination ul li a {
-            color: black;
+            color: white;
             text-decoration: none;
             padding: 0 10px;
         }
@@ -287,7 +282,7 @@ body {
 
 #section-open-news {
     background:transparent;
-    padding: 20px;
+    padding: 10px 0;
 }
 
 /* поделиться */
@@ -315,6 +310,7 @@ body {
     padding: 10px;
     border: 3px solid#00008B;
     margin: 0 10px 10px;
+    color: gray;
     /* height: auto;
     padding: 10px 10px;
     margin: 10px;
@@ -401,7 +397,7 @@ body {
         /*игрушка на покупку*/
 
         .pay img{
-        background: ;
+        
         
         width: 50%;
         height: auto;
@@ -410,17 +406,27 @@ body {
 
         .pay{
         word-break:break-all;
-        background: ;
+        
         max-height: 100%;
         height: 10%;
         height: 10%;
         }
-            .pay h2 {
-                color: #A9A9A9;
+            .pay p {
+                color: white;
             }
-            .pay h1 {
-                color: #A9A9A9;
-            }
+            
+        .pay .double-column{
+            display: flex;
+            align-items: flex-start;
+        }
+        .pay .double-column > *{
+            box-sizing: border-box;
+            width: 50%;
+        }
+        .pay .double-column .text-column{
+            padding-left: 30px;
+            font-size: 17px;
+        }
             #news-slider {
                 position: relative;
                 text-align: center;
@@ -506,4 +512,12 @@ body {
                     font-size: 200%;
                     
 
+                   }
+
+                   .iformation h2{
+
+                    justify-content: center;
+                    display: flex;
+                    color: gray;
+                    text-align: center;
                    }
