@@ -300,6 +300,7 @@ body {
     max-width: 100%;
     vertical-align: bottom;
     width: auto;
+    color: red;
 }
 
 .mony {
@@ -311,13 +312,8 @@ body {
     border: 3px solid#00008B;
     margin: 0 10px 10px;
     color: gray;
-    /* height: auto;
-    padding: 10px 10px;
-    margin: 10px;
-    background: white;
+    overflow-wrap: break-word;
     
-    outline: 3px solid #778899;
-    display: inline-block; */
 }
 
 .links {
