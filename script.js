@@ -17,13 +17,3 @@ jQuery(function(){
 })
 
 
-var1 = document.getElementById("1")
-var2 = document.getElementById("2")
-var3 = document.getElementById("3")
-
-var1 = addEventListener("click",function(){
-    var1 = addEventListener("open")
-
-
-
-})

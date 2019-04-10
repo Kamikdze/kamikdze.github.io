@@ -4,12 +4,13 @@ html, body {
     min-height: 100%;
     margin: 0;
     padding: 0;
+
 }
 
 body {
-    background: #00182E url('https://img2.goodfon.ru/original/1920x1080/0/b5/nebula-galaxy-stars-colors.jpg') center top no-repeat;
+    background: #00182E url('https://assets2.ello.co/uploads/asset/attachment/6215281/ello-optimized-d6648c9d.gif') center top no-repeat;
     background-size: 100%;
-    background-size: auto;
+    
     background-attachment: fixed;
 }
 
@@ -25,6 +26,7 @@ body {
     border-bottom: solid 3px rgb(69, 18, 189);
     margin-top: 20px;
     overflow: hidden;
+    opacity: 0.8;
 }
 
     .logotype img {
@@ -42,7 +44,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 26px;
-    color: white;
+    color: gray;
 }
 
 .navigation {
@@ -112,8 +114,11 @@ body {
     .game .poster img {
         height: auto;
         width: 100%;
+        margin: 5px 0 0 0;
     }
-
+.First-place{
+    background-color: rgba(0, 50, 50, 0.3);
+}
 
 #partner ul {
     display: flex;
@@ -146,7 +151,7 @@ body {
 }
 
     #news .categories {
-        border-left: 2px solid white;
+        border-left: 2px solid#8B0000;
         flex-grow: 0;
         flex-shrink: 0;
         margin-left: 20px;
@@ -161,14 +166,14 @@ body {
         }
 
             #news .categories ul a {
-                color: white;
+                color: gray;
                 display: block;
                 padding: 10px 20px;
                 text-decoration: none;
             }
 
                 #news .categories ul a:hover {
-                    background: #591375;
+                    background:#5c2ea4;
                 }
 
 .block-news-item {
@@ -190,6 +195,7 @@ body {
             max-width: 100%;
             max-height: 100%;
             vertical-align: bottom;
+            border: 2px solid#8B0000;
         }
 
     .block-news-item .description {
@@ -206,6 +212,7 @@ body {
         .block-news-item .description .text {
             font-size: 14px;
             margin: 20px 0;
+            color: grey;
             
         }
         .block-news-item .description .text .p{
@@ -220,9 +227,9 @@ body {
         }
 
             .block-news-item .description .bottom a {
-                border-bottom: 1px dashed white;
+                border-bottom: 1px dashed gray;
                 text-decoration: none;
-                color: white;
+                color: grey;
                 padding-bottom: 1px;
             }
 
@@ -285,6 +292,8 @@ body {
     padding: 10px 0;
 }
 
+
+
 /* поделиться */
 .block-share {
     display: flex;
@@ -306,13 +315,16 @@ body {
 .mony {
     box-sizing: border-box;
     width: calc(25% - 20px);
-    background: #FFFAFA;
+    background: rgba(0,0,0, 0.5);
     word-break: break-all;
     padding: 10px;
-    border: 3px solid#00008B;
+    border: 3px solid#8B0000;
     margin: 0 10px 10px;
     color: gray;
     overflow-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
     
 }
 
@@ -345,6 +357,7 @@ body {
 }
 
 #news-slider {
+    margin: 10px 0 0 0;
     position: relative;
     text-align: center;
 }
@@ -356,6 +369,19 @@ body {
         margin: 0 auto;
         vertical-align: bottom;
         width: auto;
+    }
+    #news-slider .slick-slide{
+        position: relative;
+    }
+    #news-slider .undertext{
+        background: rgba(0,0,0, .7);
+        color: white;
+        padding: 20px;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 40px;
+        width: 100%;
+        z-index: 1;
     }
 
     #news-slider .slick-dots {
@@ -383,7 +409,7 @@ body {
             cursor: pointer;
             border: none;
             border-radius: 50%;
-            background: yellow;
+            background: #5c2ea4;
             font-size: 0;
             line-height: 0;
             height: 10px;
@@ -419,9 +445,10 @@ body {
             box-sizing: border-box;
             width: 50%;
         }
-        .pay .double-column .text-column{
+        .pay .double-column .text-column p{
             padding-left: 30px;
-            font-size: 17px;
+            font-size: 19px;
+            color: grey;
         }
             #news-slider {
                 position: relative;
@@ -477,6 +504,12 @@ body {
                            justify-content: center;
                            display: flex;
                        }
+                       .pay2{
+                        color:gray;
+                        -ms-word-break: break-all;
+                        word-break: break-all;
+                        word-break: break-word;
+                       }
 /* cлайдер */
 
                     #store-slider .img {
@@ -517,3 +550,51 @@ body {
                     color: gray;
                     text-align: center;
                    }
+
+                   .Trest{
+                       justify-content: center;
+                       display: flex;
+                       margin: 10px 0 10px 0;
+                       padding: 25px;
+                       box-sizing: border-box;
+                       border: 2px solid#ca6613;
+                       background-color: rgba(0, 50, 50, 0.5);
+                   }
+                
+                    .k{
+                    font-size: 45px;
+                    color: #7643bd;
+                
+                   }
+
+                   
+
+                   .Cotegorisgame div a{
+                    font-size: 24px;
+                    text-decoration: none;
+                    display: inline;
+                    color:#F4A460;
+                    padding: 2px;
+                   }
+
+                   .Cotegorisgame div{
+                    margin: 15px 0 0 0;
+                    width: 100%;
+                   }
+
+                   .Cotegorisgame div:hover{
+                   text-decoration: none;
+                   background-color: rgba(106, 90, 205, 0.5);
+                }
+
+                .mony .bay{
+                    background-color: rgba(92,46,164, 0.6);
+                }
+                
+                .mony .basket{
+                    background-color: rgba(92,46,164, 0.6);
+                }
+                
+                  
+                  
+                  
