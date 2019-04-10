@@ -10,7 +10,6 @@ html, body {
 body {
     background: #00182E url('https://assets2.ello.co/uploads/asset/attachment/6215281/ello-optimized-d6648c9d.gif') center top no-repeat;
     background-size: 100%;
-    
     background-attachment: fixed;
 }
 
@@ -44,7 +43,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 26px;
-    color: gray;
+    color: #EFEFEF;
 }
 
 .navigation {
@@ -117,7 +116,9 @@ body {
         margin: 5px 0 0 0;
     }
 .First-place{
-    background-color: rgba(0, 50, 50, 0.3);
+    /* background: rgba(255,255,255, 0.1); */
+    color: #EFEFEF
+    /* background-color: rgba(0, 50, 50, 0.3); */
 }
 
 #partner ul {
@@ -212,7 +213,7 @@ body {
         .block-news-item .description .text {
             font-size: 14px;
             margin: 20px 0;
-            color: grey;
+            color: #EFEFEF;
             
         }
         .block-news-item .description .text .p{
@@ -229,7 +230,7 @@ body {
             .block-news-item .description .bottom a {
                 border-bottom: 1px dashed gray;
                 text-decoration: none;
-                color: grey;
+                color: #EFEFEF;
                 padding-bottom: 1px;
             }
 
