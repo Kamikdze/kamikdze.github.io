@@ -34,44 +34,43 @@ function setCookie(name, value, options) {
     document.cookie = updatedCookie;
 }
 
-
+function showGamers(items){
+    var wrap = document.getElementById("partners")
+    if (typeof wrap != "undefined"){
+        wrap.innerHTML = "";
+        if(items.length > 0){
+            var ul = document.createElement("ul");
+            for( var i = 0; i < items.length; i++){
+                var li = document.createElement("li"),
+                    spanName = document.createElement("span"),
+                    spanGame = document.createElement("span");
+                    spanName.classList.add("name")
+                    spanGame.classList.add("game")
+                    spanName.innerHTML = items[i].name;
+                    spanGame.innerHTML = items[i].game;
+                    li.appendChild(spanName)
+                    li.appendChild(spanGame)
+                    ul.appendChild(li)
+            } 
+            wrap.appendChild(ul)
+        }
+    }
+}
 
 var ws = null;
 try {
     ws = new WebSocket("ws://127.0.0.1:5555");
     ws.onopen = function () {
         sendMessage("auth");
-        // var sendM = {
-        //     "action": "login",
-        //     "data": {
-        //         "name": UserName
-        //     }
-        // };
-        // ws.send(JSON.stringify(sendM));
-        // document.querySelector("#sender").addEventListener("click", function(e) {
-        //     e.preventDefault();
-        //     var text = document.querySelector("#message").value.trim();
-        //     if (text.length > 0) {
-        //         //#1 - вывести в чат
-        //         writeToChatList(text, "Я");
-        //         //#2 - отправить сообщение на сервер
-        //         var sendM = {
-        //             action: "message",
-        //             data: {
-        //                 name: UserName,
-        //                 text: text
-        //             }
-        //         };
-        //         ws.send(JSON.stringify(sendM));
-        //         //#3 - очистить строку
-        //         document.querySelector("#message").value = '';
-        //     }
-        // });
     }
     ws.onmessage = function (message) {
         var input = JSON.parse(message.data);
         console.log(input);
-        // writeToChatList(input.text, input.from);
+        switch (input.action){
+            case "find-partner": 
+                showGamers(input.items);
+                break;
+        }
     }
 } catch (err) {
 
@@ -128,6 +127,17 @@ if (typeof jQuery != "undefined") {
 
 var playground = document.getElementById("playground");
 if (playground) {
+    var authCookie = getCookie("auth");
+    if (authCookie === undefined) {
+        var userName = "";
+        while (userName == ""){
+            userName = prompt("введите ваше имя");
+            userName = userName.trim();
+        }
+        sendMessage("auth", {
+            username: userName
+        });
+    }
     var
         games = playground.querySelector(".games"),
         buttons = playground.querySelector(".buttons");
@@ -179,7 +189,7 @@ if (playground) {
                                 e.preventDefault();
                                 sendMessage("find-partner", {
                                     platform: item.name,
-                                    game: game.id
+                                    game: game.name
                                 });
                             })
 

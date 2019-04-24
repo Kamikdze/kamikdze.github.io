@@ -11,6 +11,9 @@ body {
     background: #00182E url('https://assets2.ello.co/uploads/asset/attachment/6215281/ello-optimized-d6648c9d.gif') center top no-repeat;
     background-size: 100%;
     background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .container {
@@ -558,7 +561,7 @@ body {
                        margin: 10px 0 10px 0;
                        padding: 25px;
                        box-sizing: border-box;
-                       border: 2px solid#ca6613;
+                       border: 2px solid#8B0000;
                        background-color: rgba(0, 50, 50, 0.5);
                    }
                 
@@ -596,6 +599,28 @@ body {
                     background-color: rgba(92,46,164, 0.6);
                 }
                 
-                  
-                  
-                  
+
+                #partners{
+                    margin-top: auto;
+                    background: rgba(0, 0, 0, 0.6);
+                }
+                
+                #partners ul{
+                    list-style: none;
+                    margin: 0;
+                    padding: 0; 
+                }
+
+                #partners ul li{
+                    display: block;
+                    padding: 5px;
+                    border-top: 1px solid white;
+                }
+
+                #partners ul li:first-child{
+                    border-top: none;
+                }
+
+                #partners span{
+                    display: block;
+                }

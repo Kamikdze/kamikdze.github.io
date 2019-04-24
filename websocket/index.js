@@ -19,17 +19,28 @@ var redrawList = function(current, auth){
     var lst = [];
     for (var key in sessions){
         if (sessions[key].connection != current && sessions[key].connection != null){
+
+            console.log(sessions[key].findPartner);
             if (
-                typeof sessions[key].findPartner.game != "undefined" && 
-                typeof sessions[key].findPartner.platform != "undefined" &&
-                typeof sessions[auth].findPartner.game != "undefined" && 
-                typeof sessions[auth].findPartner.platform != "undefined"
+                
+                typeof sessions[key].findPartner &&
+                typeof sessions[auth].findPartner &&
+                sessions[key].findPartner != null &&
+                sessions[auth].findPartner != null &&
+                typeof sessions[key].findPartner["game"] && 
+                typeof sessions[key].findPartner["platform"] &&
+                typeof sessions[auth].findPartner["game"] && 
+                typeof sessions[auth].findPartner["platform"]
             ){
                 if (
                     sessions[key].findPartner.game == sessions[auth].findPartner.game &&
                     sessions[key].findPartner.platform == sessions[auth].findPartner.platform
                 ){
-                    lst.push(key);
+                    console.log(sessions[key]);
+                    lst.push({
+                        name: sessions[key].username,
+                        game: sessions[key].findPartner.game,
+                    });
                 }
             }
         }
@@ -50,7 +61,8 @@ server.on("connection", function(thisUser) {
             if (!sessions[input.auth]){
                 sessions[input.auth] = {
                     connection: null,
-                    findPartner: null
+                    findPartner: null,
+                    username: null
                 };
             }
             sessions[input.auth]["connection"] = thisUser;
@@ -59,6 +71,10 @@ server.on("connection", function(thisUser) {
                     for (var key in sessions){
                         if (sessions[key].connection != null){
                             var lst = redrawList(sessions[key].connection, key);
+                            console.log(input.data)
+                            if (input.data.username){
+                                sessions[key].username = input.data.username ? input.data.username : key;
+                            }
                             sessions[key].connection.send(JSON.stringify({
                                 "action": "find-partner",
                                 "items": lst
